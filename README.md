@@ -16,7 +16,6 @@ A powerful and flexible page builder plugin for Filament Admin that allows you t
 - 🔧 **Customizable Templates** - Create and use custom block templates
 - 🧭 **Navigation Integration** - Automatic navigation menu generation
 - 👁️ **Visibility Control** - Control page visibility and access
-- 📍 **SEO Friendly** - Built-in SEO fields and URL management
 - 🎯 **Position Management** - Drag and drop page ordering
 
 ## Screenshots
