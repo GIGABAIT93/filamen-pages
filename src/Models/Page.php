@@ -74,7 +74,7 @@ class Page extends Model
 
     public function translation(?string $locale = null): ?PageTranslation
     {
-        $locale = $locale ?: auth()->user()->language ?? app()->getLocale();
+        $locale = $locale ?: auth()->user()?->language ?? app()->getLocale();
 
         return $this->translations
             ->firstWhere('locale', $locale)
