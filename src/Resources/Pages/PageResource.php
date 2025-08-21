@@ -23,6 +23,11 @@ class PageResource extends Resource
         return config('pages.admin_navigation_group', null);
     }
 
+    public static function getNavigationSort(): ?int
+    {
+        return config('pages.admin_navigation_order', 5);
+    }
+
     /**
      * @return string|null
      */
