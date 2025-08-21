@@ -1,8 +1,6 @@
 # Filament Pages
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gigabait93/filament-pages.svg?style=flat-square)](https://packagist.org/packages/gigabait93/filament-pages)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/gigabait93/filament-pages/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/gigabait93/filament-pages/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/gigabait93/filament-pages/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/gigabait93/filament-pages/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/gigabait93/filament-pages.svg?style=flat-square)](https://packagist.org/packages/gigabait93/filament-pages)
 
 A powerful and flexible page builder plugin for Filament Admin that allows you to create dynamic, multi-language pages with a block-based content system.
