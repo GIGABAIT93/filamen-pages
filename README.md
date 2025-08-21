@@ -258,7 +258,7 @@ To display pages on the frontend, the plugin automatically registers routes. You
 ```php
 use Gigabait93\FilamentPages\Pages\Show;
 
-Route::get('/page/{slug}', Show::class)->name('pages.show');
+Route::get('/p/{slug?}', Show::class)->name('pages.show');
 ```
 
 ### Customizing Views
@@ -287,12 +287,6 @@ Pages are automatically added to navigation menus. You can control this behavior
 2. Choose navigation icon
 3. Set navigation position
 4. Enable/disable navigation visibility
-
-## Testing
-
-```bash
-composer test
-```
 
 ## Changelog
 
