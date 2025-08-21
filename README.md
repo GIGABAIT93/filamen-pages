@@ -62,12 +62,24 @@ This is the contents of the published config file:
 <?php
 
 return [
+    // Group label for pages in the Filament admin navigation. Set to
+    // `null` to display pages without a group.
     'admin_navigation_group' => null,
 
+    // Position of the pages group within the admin navigation menu.
+    'admin_navigation_order' => 5,
+
+    // Icon for the pages group in the admin navigation menu.
+    'admin_navigation_icon' => 'heroicon-o-document-text',
+
+
+    // Filament panel identifiers that should register the client-side
+    // plugin. Uncomment and list your panel IDs below.
     'clients_panels_ids' => [
-        'client',
+        // 'client',
     ],
 
+    // The Eloquent model representing application users.
     'user_model' => \App\Models\User::class,
 ];
 ```
@@ -152,57 +164,57 @@ The plugin supports multi-language pages:
 
 #### Text Block
 Rich text editor with formatting options:
-```php
+
 - Rich text content
 - Typography controls
 - Link management
 - List formatting
-```
+
 
 #### Image Block
 Single image with options:
-```php
+
 - Image upload
 - Alt text for SEO
 - Caption text
 - Image sizing options
-```
+
 
 #### Gallery Block
 Multiple image showcase:
-```php
+
 - Multiple image upload
 - Image ordering
 - Lightbox functionality
 - Grid layout options
-```
+
 
 #### Video Block
 Video embedding:
-```php
+
 - YouTube/Vimeo URLs
 - Local video upload
 - Autoplay options
 - Responsive sizing
-```
+
 
 #### Hero Block
 Large banner sections:
-```php
+
 - Background image/video
 - Overlay text
 - Call-to-action buttons
 - Alignment options
-```
+
 
 #### Button Block
 Call-to-action elements:
-```php
+
 - Button text and URL
 - Style variants
 - Icon support
 - Target options
-```
+
 
 ### Custom Templates
 
@@ -286,18 +298,6 @@ Pages are automatically added to navigation menus. You can control this behavior
 2. Choose navigation icon
 3. Set navigation position
 4. Enable/disable navigation visibility
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
