@@ -2,6 +2,7 @@
 
 namespace Gigabait93\FilamentPages\Resources\Pages;
 
+use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables\Table;
@@ -11,13 +12,18 @@ use Gigabait93\FilamentPages\Resources\Pages\Pages\EditPage;
 use Gigabait93\FilamentPages\Resources\Pages\Pages\ListPages;
 use Gigabait93\FilamentPages\Resources\Pages\Schemas\PageForm;
 use Gigabait93\FilamentPages\Resources\Pages\Tables\PagesTable;
+use Illuminate\Contracts\Support\Htmlable;
 use UnitEnum;
 
 class PageResource extends Resource
 {
     protected static ?string $model = Page::class;
 
-    protected static string|null|\BackedEnum $navigationIcon = 'heroicon-o-document-text';
+    public static function getNavigationIcon(): string|BackedEnum|Htmlable|null
+    {
+        return config('pages.admin_navigation_icon', 'heroicon-o-document-text');
+    }
+
     public static function getNavigationGroup(): string|UnitEnum|null
     {
         return config('pages.admin_navigation_group', null);
