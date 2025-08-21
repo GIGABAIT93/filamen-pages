@@ -12,6 +12,7 @@ use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
+use Gigabait93\FilamentPages\Models\Page;
 use Gigabait93\FilamentPages\Resources\Pages\Support\PageBlocks;
 use Illuminate\Support\Str;
 

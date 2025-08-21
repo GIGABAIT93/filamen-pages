@@ -43,10 +43,15 @@ if (!function_exists('page_media_url')) {
 if (!function_exists('localesOptions')) {
     function localesOptions(): array
     {
-        $locales = scandir(base_path('lang'));
-        return array_filter($locales, function ($locale) {
-            return $locale !== '.' && $locale !== '..' && is_dir(base_path("lang/{$locale}"));
+        $scan = scandir(base_path('lang'));
+        if ($scan === false) {
+            return [];
+        }
+        $languages = array_filter($scan, function ($item) {
+            if ($item === 'vendor') return false; // Skip vendor directory
+            return $item !== '.' && $item !== '..' && is_dir(base_path('lang/' . $item));
         });
+        return array_values($languages);
     }
 }
 
