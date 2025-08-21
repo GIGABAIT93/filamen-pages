@@ -15,7 +15,7 @@ return [
     // Filament panel identifiers that should register the client-side
     // plugin. Uncomment and list your panel IDs below.
     'clients_panels_ids' => [
-//        'client',
+        // 'client',
     ],
 
     // The Eloquent model representing application users.
