@@ -22,6 +22,8 @@ class PagesTable
     public static function configure(Table $table): Table
     {
         return $table
+            ->reorderable('position')
+            ->defaultSort('position', 'asc')
             ->headerActions([
                 CreateAction::make()
                     ->label(__('pages::admin.create_page'))
