@@ -20,8 +20,9 @@ A powerful and flexible page builder plugin for Filament Admin that allows you t
 - 🎯 **Position Management** - Drag and drop page ordering
 
 ## Screenshots
+<img width="1920" height="8050" alt="FireShot Capture 002 - Edit - StarterKit - gigabait uk" src="https://github.com/user-attachments/assets/ab9358f3-a358-4ba3-b5e1-7e1d15484067" />
+<img width="1920" height="4367" alt="FireShot Capture 001 - StarterKit - gigabait uk" src="https://github.com/user-attachments/assets/f314b11b-f20b-4647-b3bb-3d7daafee66e" />
 
-<!-- Add screenshots of your plugin in action -->
 
 ## Installation
 
