@@ -11,18 +11,16 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class Show extends FilamentPage
 {
-
     protected string $view = 'pages::show';
     protected static ?string $slug = 'p/{slug?}';
     protected static bool $shouldRegisterNavigation = false;
+    private array $blocks;
+    private ?PageTranslation $tr = null;
 
     public static function getWithoutRouteMiddleware(Panel $panel): array
     {
         return array_merge($panel->getAuthMiddleware(), [$panel->getEmailVerifiedMiddleware()]);
     }
-
-    private array $blocks;
-    private ?PageTranslation $tr = null;
 
     public function mount(string $slug): void
     {
@@ -46,7 +44,7 @@ class Show extends FilamentPage
 
     public function getTitle(): string
     {
-        return $this->tr->title ?? '';
+        return $this->tr->title ?? __('pages::admin.pages');
     }
 
     public function getViewData(): array

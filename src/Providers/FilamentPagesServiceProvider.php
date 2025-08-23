@@ -2,6 +2,8 @@
 
 namespace Gigabait93\FilamentPages\Providers;
 
+use Gigabait93\FilamentPages\Models\Page;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
 class FilamentPagesServiceProvider extends ServiceProvider
@@ -39,5 +41,10 @@ class FilamentPagesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../../config/pages.php' => config_path('pages.php'),
         ], 'filament-pages-config');
+
+        if (class_exists(\App\Policies\PagePolicy::class)) {
+            Gate::policy(Page::class, \App\Policies\PagePolicy::class);
+        }
+
     }
 }

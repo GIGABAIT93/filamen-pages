@@ -18,12 +18,12 @@ class ClientPagesPlugin implements PluginContract
 
     public function getId(): string
     {
-        return 'pages';
+        return 'filament-pages-client';
     }
 
     public function register(Panel $panel): void
     {
-        $panel->discoverPages(in: __DIR__ . '/Pages', for: 'Gigabait93\FilamentPages\Pages');
+        $panel->pages([Show::class]);
         $pages = Page::query()
             ->with('translations')
             ->where('is_active', true)

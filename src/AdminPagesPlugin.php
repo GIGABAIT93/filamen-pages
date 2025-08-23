@@ -14,7 +14,7 @@ class AdminPagesPlugin implements PluginContract
 
     public function getId(): string
     {
-        return 'pages';
+        return 'filament-pages-admin';
     }
 
     public function register(Panel $panel): void
